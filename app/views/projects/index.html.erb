@@ -8,7 +8,7 @@
       <th>Name</th>
       <th>Description</th>
       <th>User</th>
-      <th>Type</th>
+      <th>Status</th>
       <th colspan="3"></th>
     </tr>
   </thead>
@@ -16,6 +16,7 @@
   <tbody>
     <% @projects.each do |project| %>
       <tr>
+        <%p = Project.all %>"
         <td><%= project.name %></td>
         <td><%= project.description %></td>
         <td><%= project.user_id %></td>
